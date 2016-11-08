@@ -3,20 +3,23 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/app.js'),
+  entry: path.resolve(__dirname, 'src/renderer.jsx'),
   devtool: 'source-map',
   devServer: {
     contentBase: path.resolve(__dirname, 'dist')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'build.js'
+    filename: 'bundle.js'
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
   },
   module: {
     loaders: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         loader: 'babel'
       }
     ]
