@@ -1,11 +1,16 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import App from './components/app';
-import {initStore} from './store';
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
 
-let store = initStore();
+import App from './app';
+import reducer from './reducer';
+
+let store = createStore(reducer, null, window.devToolsExtension ? window.devToolsExtension() : f => f);
 
 ReactDOM.render(
-  <App store={store}/>,
+  <Provider store={store}>
+    <App/>
+  </Provider>,
   document.getElementById('app')
 );

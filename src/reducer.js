@@ -1,4 +1,3 @@
-import {createStore} from 'redux';
 import {Record} from 'immutable';
 
 const State = Record({
@@ -10,7 +9,7 @@ function addNumber(state, number) {
   return state.set('count', number + state.count);
 }
 
-function reducer(state, action) {
+export default function reducer(state, action) {
   state = state || new State();
 
   switch (action.type) {
@@ -20,9 +19,4 @@ function reducer(state, action) {
     default:
       return state;
   }
-}
-
-export function initStore() {
-  let middlewares = window.devToolsExtension ? window.devToolsExtension() : f => f;
-  return createStore(reducer, null, middlewares);
 }
