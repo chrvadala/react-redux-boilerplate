@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import View from './components/view';
+import View from './ui/view';
 import {addNumberAction} from './actions';
 
 function mapStateToProps(reduxState) {
