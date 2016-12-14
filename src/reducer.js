@@ -1,8 +1,8 @@
 import {Record} from 'immutable';
 
-const State = Record({
+const AppState = Record({
   count: 0
-}, 'State');
+}, 'AppState');
 
 
 function addNumber(state, number) {
@@ -10,7 +10,7 @@ function addNumber(state, number) {
 }
 
 export default function reducer(state, action) {
-  state = state || new State();
+  state = state || new AppState();
 
   switch (action.type) {
     case "ADD_NUMBER":
