@@ -1,6 +1,6 @@
 # react-redux-boilerplate
 
-This project is my [[chrvadala](https://github.com/chrvadala)] suggest React projects structure.
+This project is a suggested React projects structure.
 
 It use the following technologies:
  - React 15
@@ -18,3 +18,12 @@ It use the following technologies:
 ```
 npm run build
 ```
+
+## Contributing
+Your contributions (issues and pull request) are very appreciated!
+
+## Author
+- [chrvadala](https://github.com/chrvadala)
+
+## License
+MIT
