@@ -5,7 +5,7 @@ This project is a suggested React projects structure.
 It use the following technologies:
  - React 15
  - Redux 5
- - Webapack 1
+ - Webpack 1
  - Immutable 3
  - Babel 6
 
