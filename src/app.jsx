@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import View from './ui/view';
+import Main from './ui/main';
 import {addNumberAction} from './actions';
 
 function mapStateToProps(reduxState) {
@@ -17,4 +17,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(View);
+export default connect(mapStateToProps, mapDispatchToProps)(Main);

@@ -6,7 +6,7 @@ const STYLE = {
   margin: "20px"
 };
 
-export default function View({state, addNumber}) {
+export default function Main({state, addNumber}) {
   return (
     <div style={STYLE}>
       <Count value={state.count}/>
@@ -15,7 +15,7 @@ export default function View({state, addNumber}) {
   )
 }
 
-View.propTypes = {
+Main.propTypes = {
   state: PropTypes.object.isRequired,
   addNumber: PropTypes.func.isRequired
 };
