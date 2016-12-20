@@ -2,7 +2,7 @@
 
 This project is a suggested React projects structure.
 
-It use the following technologies:
+It uses the following technologies:
  - React 15
  - Redux 5
  - Webpack 2
