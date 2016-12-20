@@ -5,18 +5,29 @@ This project is a suggested React projects structure.
 It use the following technologies:
  - React 15
  - Redux 5
- - Webpack 1
+ - Webpack 2
  - Immutable 3
  - Babel 6
 
 ## Start it with
-```
-  npm install && npm start
+```sh
+  $ npm install && npm start
+  # or
+  $ yarn install && yarn start
 ```
 
 ## Build and distribuite it with
+```sh
+  npm run build
+  # or
+  yarn run build
 ```
-npm run build
+
+## Clean dist folder with
+```sh
+  npm run clean
+  # or
+  yarn run clean
 ```
 
 ## Contributing
