@@ -4,7 +4,7 @@
   "scripts": {
     "start": "webpack-dev-server --inline --env.port 9000 --env.title='React Redux Boilerplate'",
     "build": "webpack --env.production --env.title='React Redux Boilerplate'",
-    "clean": "rm dist/*.js*",
+    "clean": "rm -f dist/*.js && rm -f dist/*.js.map && rm -f dist/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
