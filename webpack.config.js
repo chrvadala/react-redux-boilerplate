@@ -18,9 +18,6 @@ module.exports = function (env) {
 
   let config = {
     context: path.resolve(__dirname),
-    performance: {
-      hints: isProduction ? 'warning' : false
-    },
     entry: {
       app: './src/renderer.jsx',
       vendor: ['immutable', 'react', 'react-dom', 'react-redux', 'redux']
