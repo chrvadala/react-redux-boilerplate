@@ -2,8 +2,8 @@
   "name": "react-redux-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack-dev-server --inline --env.port 9000 --env.title='React Redux Boilerplate'",
-    "build": "webpack --env.production --env.title='React Redux Boilerplate'",
+    "start": "webpack-dev-server --inline --env.port 9000",
+    "build": "webpack --env.production",
     "clean": "rm -f dist/*.js && rm -f dist/*.js.map && rm -f dist/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

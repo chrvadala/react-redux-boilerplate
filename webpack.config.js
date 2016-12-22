@@ -6,13 +6,14 @@ const webpack = require('webpack');
 /**
  * --env.production
  * --env.port port
- * --env.title 'page title'
  */
+
+const PAGE_TITLE = "React Redux Boilerplate";
+const VENDORS_LIBRARIES = ['immutable', 'react', 'react-dom', 'react-redux', 'redux'];
 
 module.exports = function (env) {
   let isProduction = env && env.hasOwnProperty('production');
   let port = env && env.hasOwnProperty('port') ? env.port : 8080;
-  let pageTitle = env && env.hasOwnProperty('title') ? env.title : 'Hello world!';
 
   if (isProduction) console.info('Webpack: Production mode'); else console.info('Webpack: Development mode');
 
@@ -20,7 +21,7 @@ module.exports = function (env) {
     context: path.resolve(__dirname),
     entry: {
       app: './src/renderer.jsx',
-      vendor: ['immutable', 'react', 'react-dom', 'react-redux', 'redux']
+      vendor: VENDORS_LIBRARIES
     },
     output: {
       path: path.join(__dirname, 'dist'),
@@ -53,7 +54,7 @@ module.exports = function (env) {
       }),
 
       new HtmlWebpackPlugin({
-        title: pageTitle,
+        title: PAGE_TITLE,
         template: './src/index.html.ejs',
         filename: 'index.html',
         inject: 'body',
