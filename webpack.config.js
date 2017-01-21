@@ -42,6 +42,16 @@ module.exports = function (env) {
         use: [
           {
             loader: 'babel-loader',
+            options: {
+              compact: false,
+              plugins: [
+                "transform-object-rest-spread"
+              ],
+              presets: [
+                "es2015-webpack2",
+                "react"
+              ]
+            }
           }
         ]
       }]
@@ -72,8 +82,8 @@ module.exports = function (env) {
     }));
   }
 
-  if(!isProduction){
-   config.plugins.push(new OpenBrowserPlugin({url: `http://localhost:${port}`}))
+  if (!isProduction) {
+    config.plugins.push(new OpenBrowserPlugin({url: `http://localhost:${port}`}))
   }
 
   return config;
