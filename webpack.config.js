@@ -13,7 +13,7 @@ const VENDORS_LIBRARIES = ['immutable', 'react', 'react-dom', 'react-redux', 're
 
 module.exports = function (env) {
   let isProduction = env && env.hasOwnProperty('production');
-  let port = env && env.hasOwnProperty('port') ? env.port : 8080;
+  let port = env && env.hasOwnProperty('port') ? env.port : 9000;
 
   if (isProduction) console.info('Webpack: Production mode'); else console.info('Webpack: Development mode');
 
