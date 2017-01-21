@@ -8,20 +8,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "babel-core": "^6.20.0",
-    "babel-loader": "^6.2.9",
-    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
     "babel-preset-es2015-webpack2": "^1.0.0",
-    "babel-preset-react": "^6.16.0",
-    "html-webpack-plugin": "^2.24.1",
+    "babel-preset-react": "^6.22.0",
+    "html-webpack-plugin": "^2.26.0",
     "immutable": "^3.8.1",
     "open-browser-webpack-plugin": "^0.0.3",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "react-redux": "^5.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
     "redux": "^3.6.0",
-    "webpack": "webpack/webpack#2.2.0-rc.1",
-    "webpack-dev-server": "webpack/webpack-dev-server#2.2.0-rc.0"
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0"
   },
   "homepage": "https://github.com/chrvadala/react-redux-boilerplate#readme"
 }
