@@ -28,6 +28,9 @@ module.exports = function (env) {
       filename: '[chunkhash].[name].js',
     },
     devtool: isProduction ? 'source-map' : 'eval',
+    performance: {
+      hints: isProduction ? 'warning' : false
+    },
     devServer: {
       port: port,
       contentBase: path.join(__dirname, './dist'),
