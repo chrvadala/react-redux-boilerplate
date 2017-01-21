@@ -3,11 +3,11 @@
 This project is a suggested React projects structure.
 
 It uses the following technologies:
- - React 15
- - Redux 5
- - Webpack 2
- - Immutable 3
- - Babel 6
+ - React 15.4
+ - Redux 3.6
+ - Webpack 2.2
+ - Immutable 3.8
+ - Babel 6.22
 
 ## Start it with
 ```sh
