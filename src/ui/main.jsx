@@ -6,18 +6,18 @@ const STYLE = {
   margin: "20px"
 };
 
-export default function Main({state, addNumber}) {
+export default function Main({state, actions}) {
   return (
     <div style={STYLE}>
       <Count value={state.count}/>
-      <FormData addNumber={addNumber}/>
+      <FormData addNumber={actions.addNumberAction}/>
     </div>
   )
 }
 
 Main.propTypes = {
   state: PropTypes.object.isRequired,
-  addNumber: PropTypes.func.isRequired
+  actions: PropTypes.object.isRequired,
 };
 
 

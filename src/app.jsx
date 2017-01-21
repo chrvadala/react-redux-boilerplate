@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
 import Main from './ui/main';
-import {addNumberAction} from './actions';
+import * as actions from './actions';
 
 function mapStateToProps(reduxState) {
   return {
@@ -13,7 +13,7 @@ function mapStateToProps(reduxState) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    addNumber: bindActionCreators(addNumberAction, dispatch)
+    actions: bindActionCreators(actions, dispatch)
   }
 }
 
