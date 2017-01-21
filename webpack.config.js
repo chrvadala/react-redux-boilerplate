@@ -27,7 +27,7 @@ module.exports = function (env) {
       path: path.join(__dirname, 'dist'),
       filename: '[chunkhash].[name].js',
     },
-    devtool: isProduction ? 'source-map' : 'eval-source-map',
+    devtool: isProduction ? 'source-map' : 'eval',
     devServer: {
       port: port,
       contentBase: path.join(__dirname, './dist'),
