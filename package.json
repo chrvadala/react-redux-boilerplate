@@ -4,7 +4,7 @@
   "scripts": {
     "start": "webpack-dev-server --inline --env.port 9000",
     "build": "webpack --env.production",
-    "clean": "rm -f dist/*.js && rm -f dist/*.js.map && rm -f dist/*.html",
+    "clean": "rimraf dist/*.js && rimraf dist/*.js.map && rimraf dist/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -13,15 +13,16 @@
     "babel-plugin-transform-object-rest-spread": "^6.22.0",
     "babel-preset-es2015-webpack2": "^1.0.0",
     "babel-preset-react": "^6.22.0",
-    "html-webpack-plugin": "^2.26.0",
+    "html-webpack-plugin": "^2.28.0",
     "immutable": "^3.8.1",
     "open-browser-webpack-plugin": "^0.0.3",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
-    "webpack": "2.2.0",
-    "webpack-dev-server": "2.2.0"
+    "rimraf": "^2.5.4",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.2.1"
   },
   "homepage": "https://github.com/chrvadala/react-redux-boilerplate#readme"
 }
