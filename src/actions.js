@@ -1,6 +1,12 @@
-export function addNumberAction(number) {
+export function setCurrentNumber(number) {
   return {
-    type: "ADD_NUMBER",
-    number: number
+    type: "SET_CURRENT_NUMBER",
+    number
+  }
+}
+
+export function doSum() {
+  return {
+    type: "DO_SUM"
   }
 }
