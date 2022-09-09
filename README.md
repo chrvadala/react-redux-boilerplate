@@ -1,4 +1,9 @@
+_**Deprecated Project**: I developed this project when a "hello world" with React was involving a lot of tools and knowledge. Today, thanks to [create-react-app](https://github.com/facebook/create-react-app) you can bootstrap a React project in milliseconds, so I think that you won't need this project anymore. Going to deprecate and moving my energy on different projects. [chrvadala](https://chrvadala.github.io/)_
+
+----
+
 # react-redux-boilerplate
+
 
 This project is a suggested React projects structure.
 
